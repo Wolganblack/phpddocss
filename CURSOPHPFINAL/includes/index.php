@@ -6,6 +6,25 @@
 
     <div class="row">
 
+    <div class="col-12">
+        <?php
+          if(isset($_GET['message']) && $_GET['message']=="OK")
+          {
+
+            ?> <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Registro Borrado</strong> 
+          </div> <?php 
+
+
+          }
+          ?>
+              
+     
+    </div>
+
         <div class="col-md-4">
 
             <?php if (isset($_SESSION['message'])) {  ?>
@@ -20,38 +39,26 @@
 
                 <form action="insertar.php" method="POST">
 
-                    .<div class="form-group">
-                        <label for=""></label>
+                    <div class="form-group">
+                        <label for="Carnet">Carnet</label>
                         <input type="text" name="carnet" required class="form-control" placeholder="carnet" aria-describedby="helpId" autofocus>
-                        <small id="helpId" class="text-muted"> <strong>Numero de carnet</strong> </small>
-                    </div>
+                          </div>
                     <div class="form-group">
-
+                    <label for="Nombre">Nombre</label>
                         <input type="text" name="nombre" required class="form-control" placeholder="nombre" aria-describedby="helpId" autofocus>
-
-                        <small id="helpId" class="text-muted"> <strong>Nombre</strong> </small>
-
                     </div>
                     <div class="form-group">
-
+                    <label for="Apellido">Apellido</label>
                         <input type="text" name="apellido" required class="form-control" placeholder="apellido" aria-describedby="helpId" autofocus>
-
-                        <small id="helpId" class="text-muted"> <strong>Apellido</strong> </small>
-
                     </div>
                     <div class="form-group">
-
+                    <small id="helpId" class="text-muted"> <strong>Direccion</strong> </small>
                         <textarea name="direccion" required class="form-control" placeholder="direccion"></textarea>
-                        <small id="helpId" class="text-muted"> <strong>Direccion</strong> </small>
-
                     </div>
                     </br>
                     <div class="form-group">
-
+                    <small id="helpId" class="text-muted"> <strong>Edad</strong> </small>
                         <input type="Number" name="edad" required class="form-control" placeholder="edad" aria-describedby="helpId" autofocus>
-                        <small id="helpId" class="text-muted"> <strong>Edad</strong> </small>
-
-
                     </div>
                     </br>
                     <input type="submit" , class="btn btn-primary btn-lg" name="enviar" value="enviar">

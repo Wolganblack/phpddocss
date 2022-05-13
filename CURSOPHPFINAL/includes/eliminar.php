@@ -17,6 +17,6 @@ if (isset($_GET['id'])) {
     $_SESSION['message'] = "Se elimino el registro";
     $_SESSION['message_type'] = 'danger';
     echo "Se elimino el registro";
-    header("Location:index.php");
+    header("Location:index.php?message=ok");
 }
 ?>

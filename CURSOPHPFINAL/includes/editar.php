@@ -22,8 +22,9 @@ if (isset($_GET['id'])) {
             $apellido=$_POST['apellido'];
             $direccion=$_POST['direccion'];
             $edad=$_POST['edad'];
-        $query= "UPDATE estudiante SET carnet= '$carnet', nombre ='$nombre'
+        $query= "UPDATE estudiante SET carnet= '$carnet', nombre='$nombre',
         apellido ='$apellido', direccion='$direccion',edad='$edad' WHERE id=$id";
+       
 
         $result= mysqli_query($conexion,$query);
 
@@ -68,7 +69,7 @@ if (isset($_GET['id'])) {
                          class="form-control" placeholder="edad">
                     </div>
                     <br>
-                    <input type="submit" , class="btn btn-primary btn-lg" name="editar" value="editar">
+                    <input type="submit" , class="btn btn-success btn-lg" name="editar" value="actualizar">
                 </form>
 
 

@@ -5,14 +5,14 @@ $carnet= $_POST["carnet"];
     $apellido=$_POST["apellido"];
     $direccion=$_POST["direccion"];
     $edad=$_POST["edad"];
-  /*  if(empty($carnet) || empty($nombre) || empty($apellido)
+    if(empty($carnet) || empty($nombre) || empty($apellido)
 || empty($direccion)|| empty($edad)){
 
     echo "Hay campos vacios";    
   
     
-}*/
- if(isset($_POST["enviar"]))
+}
+ elseif(isset($_POST["enviar"]))
 {
 
     

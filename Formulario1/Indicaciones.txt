@@ -1,0 +1,10 @@
+
+Para poder utilizar este ejemeplo te recomendamos:
+
+1) Iniciar los servicios de de XAMPP ( Apache )
+
+3) Las paginas index.php y recibe.php deberan de ser copiadas a la carpeta de xampp/htdocs
+
+4) Asegurese de que no exista otra pagina llamada index
+
+5) Analice el codigo, sientase libre de editarlo a su preferencia

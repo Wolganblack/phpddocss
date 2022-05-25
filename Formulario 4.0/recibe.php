@@ -15,7 +15,7 @@ echo "<b> <i> El trabajador :$nombre Con el apellido: $apellido </b> </i>";
 echo "<b> <i> Su bono :$bono y su salario final es de: $Salariofinal </b> </i>";";
 }
 
-elseif (isset($_POST['nombre']) && (isset($_POST['Salario']) && $_POST['Salario']==1500 ) 
+ elseif(isset($_POST['nombre']) && (isset($_POST['Salario']) && $_POST['Salario']==1500 ) 
 && isset($_POST['apellido'])) 
 {
 $nombre = $_POST['nombre'];

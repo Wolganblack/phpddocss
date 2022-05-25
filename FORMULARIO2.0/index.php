@@ -44,8 +44,9 @@ input:focus{
 
 </head>
 <body>
-<h1>Ejemplo de validacion por etiquetas</h1>
-<h5>Se valida que se instroduzca un correo electronico y que no hayan campos vacios, de lo contrario no se podrá acceder a la pagina recibe.php y se redireccionará  a index.php</h5>
+<h1>Se valida que se instroduzca un nombre,edad, correo electronico y clave que no
+   hayan campos vacios, de lo contrario no se podrá acceder a la pagina recibe.php 
+   y se redireccionará  a index.php</h1>
 
 	 <form action="recibe.php" method="POST"> <!–– enviamos los datos a recibe.php --¡>
            <input type="text" placeholder="Nombre "  name="nombre" required >

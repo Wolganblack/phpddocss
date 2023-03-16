@@ -1,7 +1,7 @@
 <?php 
 $servidor = 'localhost';
 $usuario = 'root';
-$clave = 'LINUX1983';
+$clave = '';
 $db = 'cursofinal';
 
 session_start(); 
